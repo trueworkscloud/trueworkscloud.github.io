@@ -7,8 +7,10 @@
     <style>
         :root {
             --primary-color: #007bff;
-            --background-color: #f4f4f4;
+            --secondary-color: #6c757d;
+            --background-color: #f8f9fa;
             --text-color: #333;
+            --accent-color: #28a745;
         }
 
         * {
@@ -21,25 +23,21 @@
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
             color: var(--text-color);
+            background-color: var(--background-color);
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
 
-        header, main, footer {
-            padding: 2rem;
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
         header {
-            background-color: var(--background-color);
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem;
             text-align: center;
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 0.5rem;
         }
 
@@ -50,12 +48,13 @@
         nav a {
             margin: 0 0.5rem;
             text-decoration: none;
-            color: var(--text-color);
+            color: white;
+            font-weight: bold;
             transition: color 0.3s ease;
         }
 
         nav a:hover {
-            color: var(--primary-color);
+            color: var(--accent-color);
         }
 
         main {
@@ -65,16 +64,20 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 1rem;
+            color: var(--primary-color);
         }
 
         p {
-            max-width: 600px;
             margin-bottom: 1rem;
+            font-size: 1.1rem;
         }
 
         ul {
@@ -82,38 +85,42 @@
             margin-bottom: 1rem;
         }
 
+        li {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
         .cta-button {
             display: inline-block;
-            background-color: var(--primary-color);
+            background-color: var(--accent-color);
             color: white;
             padding: 0.75rem 1.5rem;
             text-decoration: none;
             border-radius: 5px;
             margin-top: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
             transition: background-color 0.3s ease;
         }
 
         .cta-button:hover {
-            background-color: #0056b3;
+            background-color: #218838;
         }
 
         footer {
-            background-color: var(--background-color);
+            background-color: var(--secondary-color);
+            color: white;
             text-align: center;
             padding: 1rem;
         }
 
         @media (max-width: 768px) {
-            header, main, footer {
-                padding: 1rem;
-            }
-
             h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
 
             h2 {
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
         }
     </style>
